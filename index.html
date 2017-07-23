@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    
+      <title>Index</title>
+    
+    <link rel="stylesheet" href="/public/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="primary">
+          <h1><a href="/">
+            <img src="/public/images/logo.svg" width="98" />
+            <span>Cobalt</span>
+          </a></h1>
+        </div>
+        <div class="secondary">
+          <h2>A static site generator written in Rust</h2>
+          <nav>
+            <a href="/#getting-started" class="button install"><span>Install</span></a>
+            <a href="/docs" class="button docs"><span>Docs</span></a>
+            <a href="/contributing.html" class="button contrib">
+              <span>Contribute</span>
+            </a>
+            <a href="https://github.com/cobalt-org/cobalt.rs"
+              class="button github">
+              <span>GitHub</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="introduction">
+  <div class="inner">
+    <div class="columns three">
+      <article>
+        <h3>Fast</h3>
+        <p>Rust is f-a-s-t, fast! So is Cobalt. Turn your text files
+          into a website almost instantly.</p>
+      </article>
+      <article>
+        <h3>Easy</h3>
+        <p>Because static sites are just plain ole text files, you&rsquo;re
+          able to deploy virtually anywhere with fewer resources.</p>
+      </article>
+      <article>
+        <h3>Safe</h3>
+        <p>Besides Rust&rsquo;s guaranteed thread safety, static sites
+          require no databases or authentication which leaves you less
+          vulnerable to security risks.</p>
+      </article>
+    </div>
+
+    <h2 id="getting-started">Get Started Now</h2>
+    <pre><code>$ cargo install cobalt-bin</code></pre>
+
+    <h3>Basic Usage</h3>
+    <pre><code>
+$ cobalt init blog
+[info]   Using config file ./.cobalt.yml
+[info]   Created new project at blog
+
+$ cd blog
+
+$ cobalt build
+[info]   Using config file ./.cobalt.yml
+[info]   Building from . into build
+[info]   Created build/index.html
+[info]   Created build/posts/post-1.html
+[info]   Copying remaining assets
+[info]   Build successful
+
+</code></pre>
+  </div>
+</section>
+
+    </main>
+    <footer>
+      <div class="inner">
+        <p>Made with ❤️  by the Cobalt contributors</p>
+      </div>
+    </footer>
+  </body>
+</html>
