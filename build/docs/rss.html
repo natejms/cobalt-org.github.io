@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    
+      <title>Cobalt::Docs::RSS</title>
+    
+    <link rel="stylesheet" href="/public/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="primary">
+          <h1><a href="/">
+            <img src="/public/images/logo.svg" width="98" />
+            <span>Cobalt</span>
+          </a></h1>
+        </div>
+        <div class="secondary">
+          <h2>A static site generator written in Rust</h2>
+          <nav>
+            <a href="/#getting-started" class="button install"><span>Install</span></a>
+            <a href="/docs" class="button docs"><span>Docs</span></a>
+            <a href="/contributing.html" class="button contrib">
+              <span>Contribute</span>
+            </a>
+            <a href="https://github.com/cobalt-org/cobalt.rs"
+              class="button github">
+              <span>GitHub</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="docs">
+  <div class="inner">
+    <aside>
+      <ul>
+        <li><a href="/docs/">Getting Started</a></li>
+        <li><a href="/docs/usage.html">Usage</a></li>
+        <li><a href="/docs/config.html">Config</a></li>
+        <li><a href="/docs/layouts.html">Layouts</a></li>
+        <li><a href="/docs/pages.html">Pages</a></li>
+        <li><a href="/docs/posts.html">Posts</a></li>
+        <li><a class="active" href="/docs/rss.html">RSS</a></li>
+        <li><a href="/docs/deployment.html">Deployment</a></li>
+      </ul>
+    </aside>
+    <main>
+      <h2>RSS</h2>
+      <p>To generate an RSS file from the metadata of your <code>_posts</code>,
+      you need to provide the following data in your config.file:</p>
+      <pre><code># path where the RSS file should be generated
+rss: rss.xml
+name: My blog!
+description: Blog description
+link: http://example.com
+      </code></pre>
+      <p>None of these fields are optional, as by the <a
+      href="https://github.com/cobalt-org/cobalt.rs/blob/master">RSS 2.0
+      spec.</a></p>
+      <p>Make sure to also provide the fields <code>title</code>,
+      <code>date</code>, and <code>description</code> in the front matter of
+      your posts.</p>
+    </main>
+  </div>
+</section>
+
+    </main>
+    <footer>
+      <div class="inner">
+        <p>Made with ❤️  by the Cobalt contributors</p>
+      </div>
+    </footer>
+  </body>
+</html>
